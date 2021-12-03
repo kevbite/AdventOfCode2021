@@ -8,7 +8,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSharp.Day2", "src\CSharp.D
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSharp.Day3", "src\CSharp.Day3\CSharp.Day3.csproj", "{F4E7F7C5-5C59-4E50-9C16-E0B25DCFE8EC}"
 EndProject
-Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "Day2.FSharp", "src\Day2.FSharp\Day2.FSharp.fsproj", "{B062AB5C-B0DE-4975-8AA1-1AA41D34455F}"
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "FSharp.Day2", "src\FSharp.Day2\FSharp.Day2.fsproj", "{B062AB5C-B0DE-4975-8AA1-1AA41D34455F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
