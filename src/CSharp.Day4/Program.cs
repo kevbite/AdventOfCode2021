@@ -16,16 +16,16 @@ var boards = lines.Skip(1)
 
 void Part1()
 {
-    for (var i = 1; i < numbers.Length; i++)
-    {
-        var currentRound = numbers.Take(i).ToArray();
-
-        if (boards.FirstOrDefault(x => x.IsWinner(currentRound)) is { } winner)
+    var winningRound = Enumerable.Range(1, numbers.Length)
+        .Select(i => numbers.Take(i).ToArray())
+        .Select(currentRound => new
         {
-            PrintScore(winner, currentRound);
-            break;
-        }
-    }
+            Winner = boards.FirstOrDefault(x => x.IsWinner(currentRound)),
+            Round = currentRound
+        })
+        .FirstOrDefault(x => x.Winner is { });
+
+    PrintScore(winningRound.Winner, winningRound.Round);
 }
 
 void Part2()
